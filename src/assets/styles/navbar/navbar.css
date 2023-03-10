@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.navbar {
+  width: 100%;
+  height: 5rem;
+  padding: 70px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(39, 37, 37, 0);
+  font-family: var(--primaryFont);
+}
+.navbar .title {
+  color: #fff700;
+}
+.navbar .title .titleLogo {
+  font-size: 2rem;
+  line-height: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.navbar .title .tools {
+  margin-bottom: 5px;
+}
+.navbar .title .practienda {
+  font-size: 1rem;
+  color: aliceblue;
+}
+.navbar .list-nav {
+  font-weight: 900;
+  font-size: 1.5rem;
+  width: 50%;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  color: #f9f9f9;
+}
+.navbar .list-nav .item-nav {
+  position: relative;
+  border-radius: 12px;
+  padding: 10px;
+}
+.navbar .list-nav .item-nav .name-list-nav {
+  text-decoration: none;
+  color: #f9f9f9;
+  cursor: default;
+  padding: 20px 20px 20px 0;
+}
+.navbar .list-nav .item-nav .icon {
+  color: #f6e500;
+  position: relative;
+  top: 7px;
+  font-size: 1.8rem;
+}
+.navbar .list-nav .item-nav .navHoverElement {
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgb(28, 27, 27);
+  position: absolute;
+  top: 80px;
+}
+.navbar .list-nav .item-nav .navHoverElement .listHover {
+  list-style: none;
+}
+.navbar .list-nav .item-nav .navHoverElement .listHover li {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.navbar .list-nav .item-nav .navHoverElement .listHover .icon-list {
+  position: relative;
+  top: 5px;
+  color: #f6e500;
+}
+.navbar .list-nav .item-nav:before {
+  content: "";
+  border-radius: 12px;
+  background-color: #f6e500;
+  inset: 0;
+  position: absolute;
+  z-index: -1;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.navbar .list-nav .item-nav:hover .name-list-nav {
+  color: #181818;
+  transition: var(--transition);
+}
+.navbar .list-nav .item-nav:hover .icon {
+  transform: rotate(0.25turn);
+  transition: var(--transition);
+  color: #181818;
+}
+.navbar .list-nav .item-nav:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,82 @@
+.footer {
+  width: 100%;
+  background: #151515;
+  margin: auto;
+  bottom: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  padding: 90px 0;
+  color: aliceblue;
+}
+.footer .infoPage {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.footer .infoPage .title {
+  color: #fff700;
+}
+.footer .infoPage .title .titleLogo {
+  font-size: 3rem;
+  line-height: 45px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.footer .infoPage .title .titleLogo hr {
+  margin: 10px 0;
+}
+.footer .infoPage .title .titleLogo .tools {
+  margin-bottom: 5px;
+}
+.footer .infoPage .title .titleLogo .practienda {
+  font-size: 2rem;
+  color: aliceblue;
+}
+.footer .infoPage .title .titleLogo .p-underTitle {
+  margin-top: 30px;
+}
+.footer .title-tools {
+  color: #fff700;
+  margin-bottom: 30px;
+}
+.footer .tools-company {
+  display: flex;
+  gap: 5rem;
+}
+.footer .tools-company .footer-list {
+  list-style: none;
+  margin-top: 30px;
+}
+.footer .tools-company .footer-list li {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.footer .socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .socials .list-socials {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.3rem;
+}
+.footer .socials .donate-button {
+  color: #1a1a1a;
+  font-size: 3rem;
+  text-decoration: none;
+  background: #fff700;
+  border-radius: 50px;
+  padding: 20px;
+  font-weight: 700;
+}
+.footer .socials .donate-button .icon {
+  position: relative;
+  top: 7px;
+}/*# sourceMappingURL=footer.css.map */
