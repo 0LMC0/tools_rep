@@ -22,9 +22,14 @@ const NavBar = () => {
     }
 
   const navElements = [
+    {id:1,
+      tabName: 'Inicio',
+      linkUrl: '/'
+    },
     {
-      id:1,
-      tabName: 'FrontEnd',
+      id:2,
+      tabName: 'Herramientas',
+      linkUrl: '/herramientas',
       content: (
         <motion.div className='navHoverElement' 
         onMouseOver={() => setIsHovering(true)}
@@ -41,26 +46,12 @@ const NavBar = () => {
         </motion.div>
       )
     },
-    {id:2,
-      tabName: 'BackEnd',
-      content: (
-        <motion.div 
-        className='navHoverElement'
-        onMouseOver={() => setIsHovering(true)}
-        onMouseOut={handleMouseOut}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: IsHovering && hoveredItemId === 2 ? 2 : 0 }}
-        >
-          <h2>Hovered Div 4</h2>
-          <p>This is the content for Div 2</p>
-        </motion.div>
-      )
-    },
     {id:3,
-      tabName: 'General',
+      tabName: 'Iniciar Sesion',
+      linkUrl: '/login',
       content: (
-        <motion.div 
-          className='navHoverElement'
+          <motion.div 
+            className='navHoverElement'
           onMouseOver={() => setIsHovering(true)}
           onMouseOut={handleMouseOut}
           initial={{ opacity: 0 }}
@@ -77,21 +68,22 @@ const NavBar = () => {
     <>
     <div className='navbar'>
         <div className='title'>
+          <Link className='titleLogo' to='/'>
           <motion.h2 
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }} 
             transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-            className='titleLogo'
             >Developer <br /> <span className='tools'>Tools</span>
             <hr />
             <span className='practienda'>By Practienda</span>
             </motion.h2>
+            </Link>
         </div>
         <ul className='list-nav'>
               {navElements.map((listItem) => 
                 <motion.li className='item-nav' key={listItem.id}  onMouseOver={() => handleMouseOver(listItem.id)} onMouseOut={handleMouseOut}>
                     <MdNavigateNext className='icon' />
-                    <Link className='name-list-nav'>{listItem.tabName}</Link>
+                    <Link to={listItem.linkUrl} className='name-list-nav'>{listItem.tabName}</Link>
                   {hoveredItemId === listItem.id && <p>{listItem.content}</p>}
                 </motion.li>
                 

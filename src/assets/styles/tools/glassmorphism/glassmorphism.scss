@@ -1,0 +1,43 @@
+.glass-controls{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0.3;
+        .title{
+            color: #fff700;
+            font-weight: 900;
+            font-size: 3rem;
+        }
+        .name-logo{
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #202020;
+        }
+
+        .glass-control{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .code-glass{
+            font-size: 1.1rem;
+            margin-top: 20px;
+            width: 80%;
+            resize: none;
+            height: 110px;
+            cursor: default;
+            user-select: none;
+        }
+
+        .copy-text{
+            z-index: 2;
+            cursor: pointer;
+            user-select: none;
+            background-color: #00fbff;
+            border-radius: 12px;
+            margin: 30px 0 10px 0;
+            padding: 15px;
+            }
+        }

@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var();
 }
 
 html{
@@ -54,4 +55,13 @@ html{
 :root {
   --primaryFont : 'Poppins', sans-serif;
   --transition: all 0.5s ease;
+}
+
+.tool-container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 32px;
+  background: #ffffff;
+  box-shadow:  35px 35px 70px #666666, -35px -35px 70px #ffffff;
 }

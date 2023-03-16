@@ -1,8 +1,10 @@
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
-import AnimatedRoutes from './components/AnimatedRoutes';
+import Main from './pages/main/Main';
+import Tools from './pages/tools/Tools';
+import Login from './pages/login/Login';
 
 function App() {
 
@@ -11,7 +13,11 @@ function App() {
     <div className="App">
       <Router>
         <NavBar />
-          <AnimatedRoutes />
+          <Routes>
+              <Route path='/' element={<Main />}/>
+              <Route path='/herramientas' element={<Tools />}/>
+              <Route path='/login' element={<Login />}/> 
+          </Routes>
         <Footer />
       </Router>
     </div>

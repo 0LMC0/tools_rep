@@ -10,9 +10,10 @@
     background: rgba(39, 37, 37, 0);
     font-family: var(--primaryFont);
     .title{
-        color: #fff700;
         .titleLogo{
-            font-size: 2rem;
+            color: #fff700 !important;
+            text-decoration: none;
+            font-size: 1.5rem;
             line-height: 30px;
             cursor: pointer;
             user-select: none;
