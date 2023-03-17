@@ -40,7 +40,7 @@ const ColorSelector = () => {
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.99 }}
                 >
-              Cambiar Imagen...
+              Cambiar Imagen
             </motion.label> 
             :
             <div className='container-tool-colorSelector'>
@@ -49,7 +49,7 @@ const ColorSelector = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }} 
               >
-                Extractor de paleta de colores sobre imagen
+                PalleteImage
                 <hr />
               <span className='name-logo'>By Practienda</span>
               </motion.h2>

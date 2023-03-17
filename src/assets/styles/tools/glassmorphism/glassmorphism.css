@@ -6,14 +6,18 @@
   flex: 0.3;
 }
 .glass-controls .title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  -webkit-text-stroke: 0.2px black;
   color: #fff700;
-  font-weight: 900;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
-.glass-controls .name-logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #202020;
+.glass-controls .title .name-logo {
+  color: #000000;
+  font-size: 2rem;
+  position: relative;
+  top: -30px;
 }
 .glass-controls .glass-control {
   display: flex;

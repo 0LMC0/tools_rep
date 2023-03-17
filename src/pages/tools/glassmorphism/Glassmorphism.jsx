@@ -30,8 +30,8 @@ const Glassmorphism = () => {
             transition={{ type: "spring", stiffness: 400, damping: 17 }} 
             >GlassMorphism
             <hr />
-            </motion.h2>
             <span className='name-logo'>By Practienda</span>
+            </motion.h2>
         <div className="glass-control">
           Blur: {" "}
           <Slider style={{ width: 200, marginLeft: 20, marginRight: 20 }} value={blur} onChange={(e, value) => setBlur(value)}/>{" "}

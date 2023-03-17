@@ -1,0 +1,99 @@
+.gradient-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  font-family: var(--principalFont);
+}
+.gradient-container .content-left {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: space-around;
+  width: 100%;
+}
+.gradient-container .content-left .title-tool {
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-text-stroke: 0.2px black;
+  color: #fff700;
+  font-size: 3rem;
+}
+.gradient-container .content-left .title-tool .name-logo {
+  color: #000000;
+  font-size: 1.5rem;
+  position: relative;
+  top: -30px;
+}
+.gradient-container .content-left .color-display-gradient {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.gradient-container .content-left .color-display-gradient .color-display-item {
+  display: flex;
+}
+.gradient-container .content-left .color-display-gradient .color-display-item .input-color {
+  min-width: 70px;
+  height: 80px;
+  border-radius: 15px;
+  padding: 5px;
+}
+.gradient-container .content-left .color-display-gradient .color-display-item .info-display-box {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.gradient-container .content-left .color-display-gradient .color-display-item .info-display-box .label-gradient {
+  -webkit-text-stroke: 0.6px black;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.gradient-container .content-left .color-display-gradient .color-display-item .info-display-box .color-text {
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.6px black;
+  font-size: 2rem;
+}
+.gradient-container .content-left .controls-gradient {
+  border-radius: 15px;
+  text-align: center;
+  color: black;
+  height: auto;
+  padding: 30px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: #878181;
+  border: 3px #000 dashed;
+}
+.gradient-container .content-left .controls-gradient .button-control-gradient {
+  font-size: 2rem;
+  border-radius: 15px;
+  color: #ffffff;
+  background: #a4a4a4;
+  padding: 10px 20px;
+  font-weight: 900;
+}
+.gradient-container .content-right {
+  height: 100%;
+  width: 100%;
+  background-image: url(../../../img/bg-glassmorphism.jpg);
+  background-size: cover;
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gradient-container .content-right .box-gradient {
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 18px 17px 22px 4px rgba(0, 0, 0, 0.75);
+}/*# sourceMappingURL=gradientGenerator.css.map */
