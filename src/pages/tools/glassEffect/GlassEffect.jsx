@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 
 
 
-const Glassmorphism = () => {
+const GlassEffect = () => {
 
   const [blur, setBlur] = useState(10);
   const [borderRadius, setborderRadius] = useState(20);
@@ -28,9 +28,9 @@ const Glassmorphism = () => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }} 
             transition={{ type: "spring", stiffness: 400, damping: 17 }} 
-            >GlassMorphism
+            >GlassEffect
             <hr />
-            <span className='name-logo'>By Practienda</span>
+            <span className='name-logo'>Translúcido, Borde, Sombra.</span>
             </motion.h2>
         <div className="glass-control">
           Blur: {" "}
@@ -69,4 +69,4 @@ const Glassmorphism = () => {
   )
 }
 
-export default Glassmorphism
+export default GlassEffect

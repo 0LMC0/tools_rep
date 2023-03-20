@@ -4,24 +4,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8rem;
-    font-family: var(--principalFont);
-   .content-left{
-    flex: 0.3;
-    display: flex;
+    gap: 1rem;
     flex-direction: column;
-    align-items: center;
-    height: 100%;
-    justify-content: space-around;
-    width: 100%;
+    font-family: var(--principalFont);
+    border-radius: 15px;
     .title-tool{
+        user-select: none;
         padding: 20px;
         border-radius: 15px;
         -webkit-text-stroke: 0.2px black;
         color: #fff700;
-        font-size: 3rem;
+        font-size: 4rem;
         .name-logo{
-            color: #000000;
+            color: #ffffff;
             font-size: 1.5rem;
             position: relative;
             top: -30px;
@@ -44,61 +39,104 @@
                 margin-left: 10px;
                 display: flex;
                 flex-direction: column ;
+                color: #fff;
                 .label-gradient{
-                    -webkit-text-stroke: 0.6px black;
+                    -webkit-text-stroke: 0.4px black;
                     font-size: 1.3rem;
                     font-weight: 900;
                 }
                 .color-text{
                     font-weight: 900;
                     text-transform: uppercase;
-                    -webkit-text-stroke: 0.6px black;
+                    -webkit-text-stroke: 0.4px black;
                     font-size: 2rem;
                 }
             }
 
         }
     }
-    .controls-gradient{
-        border-radius: 15px;
-        text-align: center;
-        color: black;
-        height: auto;
-        padding: 30px;
-        width: 500px;
+
+    .controls-container{
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        background: #878181;;
-        border:  3px #000 dashed;
-        .button-control-gradient{
-            font-size: 2rem;
+        flex-direction: column;
+        text-align: center;
+        .title-controls{
+            font-size: 3rem;
+            color: #fff;
+        }
+        .controls-gradient{
             border-radius: 15px;
-            color: #ffffff;
-            background: #a4a4a4;
-            padding: 10px 20px;
-            font-weight: 900;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            height: auto;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            background: none;
+            .button-control-gradient{
+                font-size: 2rem;
+                border-radius: 15px;
+                color: #ffffff;
+                background: #6c6c6c;
+                padding: 10px 20px;
+                font-weight: 900;
+            }
+        }
+        
+    }
+
+    .info-gradient-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .btn-copy-gradient{
+            width: 50%;
+            border-radius: 15px;
+            padding: 20px;
+            background: #00fbff;
+            color: #fff;
+            text-align: center;
+            font-size: 1.3rem;
+            margin: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            -webkit-box-shadow: 16px 20px 28px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 16px 20px 28px 0px rgba(0,0,0,0.75);
+            box-shadow: 16px 20px 28px 0px rgba(0,0,0,0.75);
+        }
+        .textarea-gradient{
+            text-align: center;
+            font-size: 1.1rem;
+            resize: none;
+            width: 700px;
+            height: 45px;
+            background-color: #6c6c6c; 
+            color: #fff;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            padding: 10px;
+            
         }
     }
-   }
 
-   .content-right{
-    height: 100%;
-    width: 100%;
-    background-image: url(../../../img/bg-glassmorphism.jpg);
-    background-size: cover;
-    flex: 0.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .box-gradient{
-        width: 500px;
-        height: 500px;
-        border-radius: 20px;
-        -webkit-box-shadow: 18px 17px 22px 4px rgba(0,0,0,0.75);
-        -moz-box-shadow: 18px 17px 22px 4px rgba(0,0,0,0.75);
-        box-shadow: 18px 17px 22px 4px rgba(0,0,0,0.75);
+    .arrow-info-gradient{
+        transform: rotate(20deg);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        .arrow-select{
+            font-size: 2rem;
+            color: #fff;
+            font-weight: 800;
+            font-family: var(--primaryFont);
+        }
     }
-   }
+
 }

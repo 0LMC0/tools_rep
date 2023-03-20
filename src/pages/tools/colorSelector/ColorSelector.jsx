@@ -51,7 +51,7 @@ const ColorSelector = () => {
               >
                 PalleteImage
                 <hr />
-              <span className='name-logo'>By Practienda</span>
+              <span className='name-logo'>Extracción de colores de una imagen.</span>
               </motion.h2>
               
               <motion.label for="image-upload"

@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {IoIosCloseCircle} from 'react-icons/io'
-import Glassmorphism from './glassmorphism/Glassmorphism';
 import ColorSelector from './colorSelector/ColorSelector';
-import TextEditor from './textEditor/TextEditor';
-import FindIMG from './findIMG/FindIMG';
+import FindIMG from './stockImg/StockImg';
 import ShadowGenerator from './shadowGenerator/ShadowGenerator';
 import WebScroll from './webscroll/WebScroll';
 import Neuromorphism from './neuromorphism/Neuromorphism';
 
 import '../../assets/styles/tools/tools.css'
 import GradientGenerator from './gradientGenerator/GradientGenerator';
+import GlassEffect from './glassEffect/GlassEffect';
+import StockImg from './stockImg/StockImg';
 
 
 const Tools = () => {
@@ -19,10 +19,10 @@ const Tools = () => {
   const toolsList = [
     {
       id: 1,
-      title: 'GlassMorphism', 
+      title: 'GlassEffect', 
       subtitle: 'Translúcido, Borde, Sombra.', 
       class: 'card',
-      content: <Glassmorphism />
+      content: <GlassEffect />
     },
     { id: 2,
       title: 'PaletteImage', 
@@ -37,10 +37,10 @@ const Tools = () => {
       content : <GradientGenerator />
     },
     { id: 4,
-      title: 'Editor de texto', 
+      title: 'StockImg', 
       class: 'card',
-      subtitle: 'Edición fácil y rápida.', 
-      content : <TextEditor />
+      subtitle: 'Fotografias De Stock Gratis.', 
+      content : <StockImg />
     },
     { id: 5,
       title: 'Encuentra la Imagen!', 
